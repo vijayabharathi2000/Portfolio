@@ -13,7 +13,7 @@ export function createApp() {
 
   app.use(
     cors({
-      origin: env.clientUrl,
+      origin: [env.clientUrl, env.productionUrl],
       credentials: true,
     }),
   )

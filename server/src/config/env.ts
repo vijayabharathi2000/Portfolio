@@ -17,4 +17,5 @@ export const env = {
   jwtExpiresIn: process.env.JWT_EXPIRES_IN ?? '1d',
   clientUrl: process.env.CLIENT_URL ?? 'http://localhost:5173',
   cookieSecure: process.env.COOKIE_SECURE === 'true',
+  productionUrl: process.env.Production_URL ?? 'https://portfolio-1-bfpz.onrender.com'
 }
