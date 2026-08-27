@@ -1,0 +1,39 @@
+# Frontend
+
+frontend/dist
+frontend/dist-ssr
+frontend/node_modules
+frontend/coverage
+
+# Backend
+
+server/dist
+server/build
+server/node_modules
+server/coverage
+
+.env
+.env.*
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS
+Thumbs.db

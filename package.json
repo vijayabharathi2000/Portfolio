@@ -1,0 +1,20 @@
+{
+  "name": "portfolio",
+  "version": "0.0.0",
+  "description": "Full-stack portfolio CMS",
+  "type": "module",
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build && npm --prefix server run build",
+    "preview": "npm --prefix frontend run preview",
+    "lint": "npm --prefix frontend run lint",
+    "type-check": "npm --prefix frontend run type-check && npm --prefix server run type-check",
+    "test": "npm --prefix server run test",
+    "server": "npm --prefix server run dev",
+    "seed": "npm --prefix server run seed",
+    "install-all": "npm install && npm --prefix frontend install && npm --prefix server install"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
