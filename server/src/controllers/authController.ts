@@ -7,10 +7,11 @@ import { ApiError } from '../utils/ApiError.js'
 import type { LoginInput } from '../validators/authValidators.js'
 
 function cookieOptions(): CookieOptions {
+  const isProduction = env.cookieSecure
   return {
     httpOnly: true,
     secure: env.cookieSecure,
-    sameSite: 'lax',
+    sameSite: isProduction ? 'none' : 'lax',
     maxAge: 24 * 60 * 60 * 1000,
     path: '/',
   }
